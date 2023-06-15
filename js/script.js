@@ -15,8 +15,8 @@ anchors.forEach(anc => {
         const id = anc.getAttribute("href");
         const elem = document.querySelector(id);
 
-        var widthWind = document.querySelector("body").offsetWidth;
-        var bottom = document.getElementById("bottom"); //Ищу кнопку "НИЗ" по id bottom
+        let widthWind = document.querySelector("body").offsetWidth;
+        let bottom = document.getElementById("bottom"); //Ищу кнопку "НИЗ" по id bottom
 
         if (bottom.classList.contains("active")) { //Проверяю на наличие класса active кнопки "НИЗ", чтобы правильно работал скрлл на всех итемах
             if (widthWind <= 339){
